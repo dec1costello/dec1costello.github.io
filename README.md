@@ -5,15 +5,6 @@
 
 ## ⚾ ⛷️ 🏔️ I am a Lifelong Learner and Sports Fan! 🏔️ ⚾ ⛷️
 
-
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31prxvnieesqxmye2objinsowaxy&cover_image=true&theme=default&show_offline=false&background_color=121212)](https://spotify-github-profile.vercel.app/api/view?uid=31prxvnieesqxmye2objinsowaxy&redirect=true)
-
-   <a href="https://github.com/dec1costello?tab=repositories&sort=stargazers">
-   <img alt="total stars" title="Total stars on GitHub" src="https://custom-icon-badges.demolab.com/github/stars/dec1costello?color=55960c&style=for-the-badge&labelColor=488207&logo=star"/></a>
-  
-  <a href="https://github.com/dec1costello?tab=followers">
-    <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/dec1costello?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/></a>
-  
 </div>
 
 ###  👋 Connect
