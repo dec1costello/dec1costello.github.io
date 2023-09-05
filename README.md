@@ -1,12 +1,5 @@
 # Hi there, I'm Declan 🤙
 
-
-<div align="center">
-
-## ⚾ ⛷️ 🏔️ I am a Lifelong Learner and Sports Fan! 🏔️ ⚾ ⛷️
-
-</div>
-
 ###  👋 Connect
 
 <a href="https://twitter.com/dec1costello"><img align="left" src="https://www.vectorlogo.zone/logos/twitter/twitter-icon.svg" width="30px" style="padding-right:30px;"/></a>
