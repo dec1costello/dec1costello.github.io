@@ -2,20 +2,21 @@
 
 
 ## Education		        		
-- B.S., Software Engineering | University of Iowa State (_May 2021_)
-- Minor, Chemistry | University of Iowa State (_May 2021_)
+- B.S., Software Engineering | Iowa State University (_May 2021_)
+- Minor, Chemistry | Iowa State University (_May 2021_)
 
 
 ## Work Experience
-**Engineer @ Colorado Rockies (_June 2022 - Present_)**
-- R&D
+**Engineer @ Colorado Rockies (_2022 - Present_)**
+- Support all techincal aspects of Baseball Operations to create a World Series Championship Team
 
-**Engineer @ BMW (_December 2021 - March 2022_)**
-- R&D
+**Engineer @ BMW (_2021 - 2022_)**
+- Collaborated across engineering teams in the United States and Germany to design, document, and deliver microservices to empower data driven decisons making for national emissions
+- Processed and analyzed 3+ million national electric vehicle charging sessions to maximize renewable energy
 
 ## Projects
 ### Distance Predictor
-- R&D
+- Inspired by [NASA's Beginners Guide To Aeronautics](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/whit/#play-ball), the [Distance Predictor](https://github.com/dec1costello/Baseball/tree/main/Distance-Predictor) project harnesses data from  [Pybaseball Data](https://github.com/jldbc/pybaseball), specifically from the 2022 MLB Season, to forecast the trajectory of batted ball distances. With an interest in hitting mechanics and atmospheric influences, the primary aspiration is to contribute meaningful insights to the baseball community. Here, I use [Streamlit](https://streamlit.io/) to demo a light weight version of the Distance Predictor. Feel free to try it out [here](https://light-weight-distance-predictor.streamlit.app/)!
 
 ## Acknowlegments
 1. Bollinger, P. E. B. (2021). Use of Concrete Grinding Residue as a Soil Amendment. (n.p.): Michigan State University. Civil Engineering. [https://intrans.iastate.edu/app/uploads/2023/03/concrete_grinding_residue_use_as_soil_amendment_w_cvr.pdf](https://intrans.iastate.edu/app/uploads/2023/03/concrete_grinding_residue_use_as_soil_amendment_w_cvr.pdf)
@@ -37,17 +38,3 @@
 <img align="left" alt="MySQL" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" style="padding-right:10px;" />
 <img align="left" alt="Visual Studio Code" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;"/>
 <img align="left" alt="scikit_learn" width="55px" style="padding-right:10px;" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" />
-
-<br />
-<br />
-<br />
-
-<p align=center>
-  <div align=center>
-    <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
-      <img align="left" width=390 src="https://github-readme-streak-stats.herokuapp.com/?user=dec1costello&theme=react&border=61dafb&hide_border=true" alt="zumrudu-anka" />
-    </a>
-  
-  </div>
-
-</p>
