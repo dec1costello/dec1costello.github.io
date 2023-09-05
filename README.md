@@ -3,6 +3,8 @@
 
 ## Education		        		
 - B.S., Software Engineering | University of Iowa State (_May 2021_)
+- Minor, Chemistry | University of Iowa State (_May 2021_)
+
 
 ## Work Experience
 **Engineer @ Colorado Rockies (_June 2022 - Present_)**
