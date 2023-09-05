@@ -1,8 +1,18 @@
 # Hi there, I'm Declan 🤙
 
 
-## Acknowlegments
+## Education		        		
+- B.S., Software Engineering | University of Iowa State (_May 2021_)
 
+## Work Experience
+**Engineer @ Colorado Rockies (_June 2022 - Present_)**
+
+**Engineer @ BMW (_December 2021 - March 2022_)**
+
+## Projects
+### Distance Predictor
+
+## Acknowlegments
 1. [Bollinger, P. E. B. (2021). Use of Concrete Grinding Residue as a Soil Amendment. (n.p.): Michigan State University. Civil Engineering.](https://intrans.iastate.edu/app/uploads/2023/03/concrete_grinding_residue_use_as_soil_amendment_w_cvr.pdf)
 
 ###  👋 Connect
