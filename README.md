@@ -1,5 +1,10 @@
 # Hi there, I'm Declan 🤙
 
+
+## Acknowlegments
+
+1. [Bollinger, Patrick E. B.. Use of Concrete Grinding Residue as a Soil Amendment. N.p., Michigan State University. Civil Engineering, 2021.](https://intrans.iastate.edu/app/uploads/2023/03/concrete_grinding_residue_use_as_soil_amendment_w_cvr.pdf)
+
 ###  👋 Connect
 
 <a href="https://twitter.com/dec1costello"><img align="left" src="https://www.vectorlogo.zone/logos/twitter/twitter-icon.svg" width="30px" style="padding-right:30px;"/></a>
