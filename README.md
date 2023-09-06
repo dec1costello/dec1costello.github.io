@@ -36,6 +36,9 @@
 <a href="https://www.linkedin.com/in/declan-costello-7423aa137/"><img align="left" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" width="30px" style="padding-right:30px;"/></a>
 <a href="https://www.kaggle.com/dec1costello"><img align="left" src = "https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" height="30px" style="padding-right:30px;"/></a>
 
+<br />
+<br />
+
 ## Acknowlegments
 **Use of Concrete Grinding Residue as a Soil Amendment**
 - Bollinger, P. E. B. (2021). Use of Concrete Grinding Residue as a Soil Amendment. (n.p.): Michigan State University. Civil Engineering. [https://intrans.iastate.edu/app/uploads/2023/03/concrete_grinding_residue_use_as_soil_amendment_w_cvr.pdf](https://intrans.iastate.edu/app/uploads/2023/03/concrete_grinding_residue_use_as_soil_amendment_w_cvr.pdf)
