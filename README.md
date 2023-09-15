@@ -16,15 +16,15 @@
 
 
 ## Work Experience
-**Engineer @ Colorado Rockies _2022 - Present_**
+**Engineer @ Colorado Rockies \| Denver, CO _2022 - Present_**
 - Colorado Rockies Baseball Operations development
 
-**Engineer @ BMW _2021 - 2022_**
+**Engineer @ BMW \| Mountain View, CA _2021 - 2022_**
 - Collaborated across engineering teams in the United States and Germany to design, document, and deliver microservices to empower data driven decison making for national emissions
 - Processed and analyzed 3+ million national electric vehicle charging sessions to maximize renewable energy
 
 ## Leadership Experience
-**Caddy @ Butterfield Country Club _2009 - 2018_**
+**Caddy @ Butterfield Country Club \| Oakbrook, IL _2009 - 2018_**
 - Built relationships with 50+ patrons daily and saved enough to pay for my 1st year of college while mentoring noive caddies to provide excellent customer service and exceed club standards
 
 ## Projects
