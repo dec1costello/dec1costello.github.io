@@ -17,7 +17,7 @@
 
 ## Work Experience
 **Engineer @ Colorado Rockies _2022 - Present_**
-- Create a World Series Championship Team by supporting all techincal aspects of the Colorado Rockies Baseball Operations
+- Colorado Rockies Baseball Operations development
 
 **Engineer @ BMW _2021 - 2022_**
 - Collaborated across engineering teams in the United States and Germany to design, document, and deliver microservices to empower data driven decison making for national emissions
