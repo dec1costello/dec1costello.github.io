@@ -31,7 +31,7 @@
 **Distance Predictor**
 - The [Distance Predictor](https://github.com/dec1costello/Baseball/tree/main/Distance-Predictor) project harnesses data from Pybaseball Data, specifically from the 2022 MLB Season, to forecast the trajectory of batted ball distances. With an interest in hitting mechanics and atmospheric influences, the primary aspiration is to contribute meaningful insights to the baseball community. I used Streamlit to demo a light weight version of the Distance Predictor. Feel free to try it out [here](https://light-weight-distance-predictor.streamlit.app/)!
 
-<img src="https://github.com/dec1costello/Baseball/assets/79241861/b7cee43a-5197-412e-abdb-2f5502605b96" alt="WOBA Heatmap" />
+<img src="https://github.com/dec1costello/dec1costello.github.io/assets/79241861/e3d47e4b-d7c8-466c-82af-58cd2b20b87a" alt="WOBA Heatmap" />
 
 ## Connect
 <a href="https://twitter.com/dec1costello"><img align="left" src="https://www.vectorlogo.zone/logos/twitter/twitter-icon.svg" width="30px" style="padding-right:30px;"/></a>
