@@ -17,7 +17,7 @@
 
 ## Work Experience
 **Engineer @ Colorado Rockies \| Denver, CO _2022 - Present_**
-- Colorado Rockies Baseball Operations development
+- Baseball Operations Systems Development
 
 **Engineer @ BMW \| Mountain View, CA _2021 - 2022_**
 - Collaborated across engineering teams in the United States and Germany to design, document, and deliver microservices to empower data driven decison making for national emissions
