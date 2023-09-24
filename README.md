@@ -17,8 +17,9 @@
 <img src="https://github.com/dec1costello/dec1costello.github.io/assets/79241861/4e80b725-9aaf-43f0-b37f-3550bad56ecb" alt="WOBA Heatmap" />
 
 ## Education		        		
-- Iowa State University \| Bachelor of Science, Software Engineering
-- Iowa State University \| Minor, Chemistry
+**Iowa State University**
+- Bachelor of Science, Software Engineering
+- Minor, Chemistry
 
 ## Acknowlegments
 **Use of Concrete Grinding Residue as a Soil Amendment**
