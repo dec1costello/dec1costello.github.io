@@ -1,20 +1,3 @@
-## Skills
-
-<img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
-<img align="left" alt="Git" width="30px" src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" style="padding-right:10px;"/>
-<img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" />
-<img align="left" alt="MySQL" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" style="padding-right:10px;" />
-<img align="left" alt="Visual Studio Code" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;"/>
-<img align="left" alt="scikit_learn" width="55px" style="padding-right:10px;" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" />
-
-<br />
-<br />
-
-## Education		        		
-- Iowa State University \| Bachelor of Science, Software Engineering
-- Iowa State University \| Minor, Chemistry
-
-
 ## Work Experience
 **Engineer @ Colorado Rockies \| Denver, CO _2022 - Present_**
 - Baseball Operations, Systems Development
@@ -33,6 +16,14 @@
 
 <img src="https://github.com/dec1costello/dec1costello.github.io/assets/79241861/4e80b725-9aaf-43f0-b37f-3550bad56ecb" alt="WOBA Heatmap" />
 
+## Education		        		
+- Iowa State University \| Bachelor of Science, Software Engineering
+- Iowa State University \| Minor, Chemistry
+
+## Acknowlegments
+**Use of Concrete Grinding Residue as a Soil Amendment**
+- Bollinger, P. E. B. (2021). Use of Concrete Grinding Residue as a Soil Amendment. (n.p.): Michigan State University. Civil Engineering. [https://intrans.iastate.edu/app/uploads/2023/03/concrete_grinding_residue_use_as_soil_amendment_w_cvr.pdf](https://intrans.iastate.edu/app/uploads/2023/03/concrete_grinding_residue_use_as_soil_amendment_w_cvr.pdf)
+
 ## Connect
 <a href="https://twitter.com/dec1costello"><img align="left" src="https://www.vectorlogo.zone/logos/twitter/twitter-icon.svg" width="30px" style="padding-right:30px;"/></a>
 <a href="https://www.linkedin.com/in/declan-costello-7423aa137/"><img align="left" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" width="30px" style="padding-right:30px;"/></a>
@@ -41,6 +32,14 @@
 <br />
 <br />
 
-## Acknowlegments
-**Use of Concrete Grinding Residue as a Soil Amendment**
-- Bollinger, P. E. B. (2021). Use of Concrete Grinding Residue as a Soil Amendment. (n.p.): Michigan State University. Civil Engineering. [https://intrans.iastate.edu/app/uploads/2023/03/concrete_grinding_residue_use_as_soil_amendment_w_cvr.pdf](https://intrans.iastate.edu/app/uploads/2023/03/concrete_grinding_residue_use_as_soil_amendment_w_cvr.pdf)
+## Skills
+
+<img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
+<img align="left" alt="Git" width="30px" src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" style="padding-right:10px;"/>
+<img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" />
+<img align="left" alt="MySQL" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" style="padding-right:10px;" />
+<img align="left" alt="Visual Studio Code" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;"/>
+<img align="left" alt="scikit_learn" width="55px" style="padding-right:10px;" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" />
+
+<br />
+<br />
