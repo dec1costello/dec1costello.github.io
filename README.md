@@ -12,7 +12,7 @@
 
 ## Projects
 **Distance Predictor**
-- The [Distance Predictor](https://github.com/dec1costello/Baseball/tree/main/Distance-Predictor) predicts the distance of a batted baseball with tabular data from the 2022 MLB season. The predictor uses a Voting Regressor ensemble of individually hyperparameter-tuned XGBoost, Random Forest, MLP Regressor, and Gradient Boosting Regressor to ensure the highest precision & accuracy in predictions. The ensemble was used stratified train-test splits, mitigating bias and ensuring a more representative evaluation of model performance. Feel free to try a compressed model for an interactive, user-friendly real-time exploration on [Streamlit here](https://light-weight-distance-predictor.streamlit.app/)!
+- The [Distance Predictor](https://github.com/dec1costello/Baseball/tree/main/Distance-Predictor) predicts the distance of a batted baseball with tabular data from the 2022 MLB season. I used a Voting Regressor ensemble of individually hyperparameter-tuned XGBoost, Random Forest, MLP Regressor, and Gradient Boosting Regressor models to ensure the highest precision & accuracy. The ensemble used stratified train-test splits, mitigating bias and ensuring a more representative evaluation of model performance. Feel free to try a user-friendly, real-time exploration of the compressed Distance Predictor [here on Streamlit](https://light-weight-distance-predictor.streamlit.app/)!
 
 <img src="https://github.com/dec1costello/dec1costello.github.io/assets/79241861/4e80b725-9aaf-43f0-b37f-3550bad56ecb" alt="WOBA Heatmap" />
 
