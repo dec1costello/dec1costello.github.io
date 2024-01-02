@@ -15,9 +15,7 @@
 **Iowa State University**
 - Bachelor of Science, Software Engineering
 - Minor, Chemistry
-
-## Acknowlegments
-**Use of Concrete Grinding Residue as a Soil Amendment**
+**Acknowlegments**
 - [Bollinger, P. E. B. (2021). Use of Concrete Grinding Residue as a Soil Amendment. (n.p.): Michigan State University. Civil Engineering.](https://intrans.iastate.edu/app/uploads/2023/03/concrete_grinding_residue_use_as_soil_amendment_w_cvr.pdf)
 
 ## Connect
