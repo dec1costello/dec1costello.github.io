@@ -11,10 +11,6 @@
 
 <img src="https://github.com/dec1costello/dec1costello.github.io/assets/79241861/4e80b725-9aaf-43f0-b37f-3550bad56ecb" alt="WOBA Heatmap" />
 
-## Leadership Experience
-**Caddy @ Butterfield Country Club \| Oakbrook, IL _2009 - 2018_**
-- Built relationships with 50+ patrons daily and saved enough to pay for my 1st year of college while mentoring noive caddies to provide excellent customer service and exceed club standards
-
 ## Education		        		
 **Iowa State University**
 - Bachelor of Science, Software Engineering
