@@ -2616,11 +2616,10 @@ input, select, textarea {
 		}
 
 		#header > .inner {
-			-moz-flex-grow: 1;
-			-webkit-flex-grow: 1;
-			-ms-flex-grow: 1;
-			flex-grow: 1;
-			margin: 0 0 2em 0;
+			    width: 100px;
+			    height: 200px;
+			    background-color: green;
+			    margin: 0 0 2em 0;
 		}
 
 		#header strong, #header b {
