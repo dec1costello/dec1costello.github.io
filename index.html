@@ -606,72 +606,217 @@
 <!-- Leaflet JS for Map -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-  // Set current year
-  document.getElementById('year').textContent = new Date().getFullYear();
-  
-  // Mobile menu toggle
-  document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('.nav-links').classList.toggle('active');
-  });
-
-  // Smooth scrolling
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-      document.querySelector('.nav-links').classList.remove('active');
-    });
-  });
-
-  // National Parks Map
   document.addEventListener('DOMContentLoaded', function() {
-    const map = L.map('parks-map').setView([39.8283, -98.5795], 4);
+    // Create map with better initial view
+    const map = L.map('parks-map', {
+      center: [39.8283, -98.5795],
+      zoom: 4,
+      zoomControl: false, // We'll add a nicer one later
+      preferCanvas: true // Better performance for many markers
+    });
+
+    // Add multiple tile layer options with a layer control
+    const baseLayers = {
+      "Terrain": L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        maxZoom: 17,
+        attribution: 'Map data: © <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, SRTM | Map style: © <a href="https://opentopomap.org">OpenTopoMap</a>'
+      }),
+      "Satellite": L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community'
+      }),
+      "Street": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      })
+    };
     
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    baseLayers.Terrain.addTo(map);
+    
+    // Add layer control
+    L.control.layers(baseLayers, null, {
+      position: 'topright',
+      collapsed: false
     }).addTo(map);
     
-    // Sample park locations (replace with your actual visits)
-  const parks = [
-    // Original parks
-    { name: "Rocky Mountain NP", coords: [40.3428, -105.6836] },
-    { name: "Zion NP", coords: [37.2982, -113.0263] },
-    { name: "Yellowstone", coords: [44.4280, -110.5885] },
-    { name: "Grand Teton", coords: [43.7904, -110.6818] },
+    // Add custom zoom control with home button
+    L.control.zoom({
+      position: 'topright'
+    }).addTo(map);
     
-    // New West Coast parks
-    { name: "Olympic NP", coords: [47.8021, -123.6044] },
-    { name: "Crater Lake NP", coords: [42.8684, -122.1685] },
-    { name: "Redwood NP", coords: [41.2132, -124.0046] },
-    { name: "Yosemite NP", coords: [37.8651, -119.5383] },
-    { name: "Pinnacles NP", coords: [36.4906, -121.1836] },
-    { name: "Kings Canyon NP", coords: [36.8879, -118.5551] },
-    { name: "Sequoia NP", coords: [36.4864, -118.5658] },
-    { name: "Death Valley NP", coords: [36.5323, -116.9325] },
-    
-    // Southwest parks
-    { name: "Saguaro NP", coords: [32.1479, -110.7887] },
-    { name: "Bryce Canyon NP", coords: [37.5930, -112.1871] },
-    { name: "Canyonlands NP", coords: [38.3269, -109.8783] },
-    { name: "Arches NP", coords: [38.7331, -109.5925] },
-    { name: "Great Sand Dunes NP", coords: [37.7916, -105.5942] },
-    
-    // Midwest/East parks
-    { name: "Badlands NP", coords: [43.8554, -102.3397] },
-    { name: "Indiana Dunes NP", coords: [41.6379, -87.0965] },
-    { name: "Great Smoky Mountains NP", coords: [35.6118, -83.5495] },
-    { name: "Congaree NP", coords: [33.7930, -80.7817] }
-  ];
-    
+    // Add scale control
+    L.control.scale({
+      position: 'bottomleft',
+      imperial: true,
+      metric: false
+    }).addTo(map);
+
+    // Custom icon with different colors for different park types
+    const getParkIcon = (type = 'default') => {
+      const iconColors = {
+        'mountain': '#4a6baf', // Blue for mountain parks
+        'canyon': '#d35400',   // Orange for canyon parks
+        'forest': '#27ae60',   // Green for forest parks
+        'default': '#8e44ad'   // Purple for others
+      };
+      
+      const color = iconColors[type] || iconColors.default;
+      
+      return L.divIcon({
+        html: `
+          <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path fill="${color}" d="M16 1.5c-8.56 0-15.5 6.94-15.5 15.5s6.94 15.5 15.5 15.5 15.5-6.94 15.5-15.5-6.94-15.5-15.5-15.5zm0 28c-6.89 0-12.5-5.61-12.5-12.5s5.61-12.5 12.5-12.5 12.5 5.61 12.5 12.5-5.61 12.5-12.5 12.5z"/>
+            <path fill="${color}" d="M16 5c-6.63 0-12 5.37-12 12s5.37 12 12 12 12-5.37 12-12-5.37-12-12-12zm0 22.5c-5.79 0-10.5-4.71-10.5-10.5s4.71-10.5 10.5-10.5 10.5 4.71 10.5 10.5-4.71 10.5-10.5 10.5z"/>
+            <path fill="${color}" d="M16 8.5c-4.14 0-7.5 3.36-7.5 7.5s3.36 7.5 7.5 7.5 7.5-3.36 7.5-7.5-3.36-7.5-7.5-7.5zm0 13.5c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+            <path fill="${color}" d="M16 12c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+            <circle cx="16" cy="16" r="1.5" fill="${color}"/>
+          </svg>
+        `,
+        className: 'park-icon',
+        iconSize: [32, 32],
+        iconAnchor: [16, 16],
+        popupAnchor: [0, -16]
+      });
+    };
+
+    // Enhanced parks data with types and descriptions
+    const parks = [
+      { name: "Rocky Mountain NP", coords: [40.3428, -105.6836], type: "mountain", desc: "Majestic mountain vistas and alpine lakes" },
+      { name: "Zion NP", coords: [37.2982, -113.0263], type: "canyon", desc: "Stunning sandstone cliffs and narrow canyons" },
+      { name: "Yellowstone", coords: [44.4280, -110.5885], type: "mountain", desc: "World's first national park with geysers and wildlife" },
+      { name: "Grand Teton", coords: [43.7904, -110.6818], type: "mountain", desc: "Dramatic mountain peaks rising above Jackson Hole" },
+      { name: "Olympic NP", coords: [47.8021, -123.6044], type: "forest", desc: "Temperate rainforests and rugged Pacific coastline" },
+      { name: "Crater Lake NP", coords: [42.8684, -122.1685], type: "mountain", desc: "Deepest lake in the U.S. formed in a volcanic caldera" },
+      { name: "Redwood NP", coords: [41.2132, -124.0046], type: "forest", desc: "Home to the tallest trees on Earth" },
+      { name: "Yosemite NP", coords: [37.8651, -119.5383], type: "mountain", desc: "Iconic granite cliffs, waterfalls, and giant sequoias" },
+      { name: "Pinnacles NP", coords: [36.4906, -121.1836], type: "mountain", desc: "Remnants of an ancient volcanic field" },
+      { name: "Kings Canyon NP", coords: [36.8879, -118.5551], type: "mountain", desc: "Deep canyon carved by glaciers" },
+      { name: "Sequoia NP", coords: [36.4864, -118.5658], type: "forest", desc: "Home to the massive General Sherman Tree" },
+      { name: "Death Valley NP", coords: [36.5323, -116.9325], type: "canyon", desc: "Hottest, driest, and lowest national park" },
+      { name: "Saguaro NP", coords: [32.1479, -110.7887], type: "default", desc: "Iconic giant cacti of the Sonoran Desert" },
+      { name: "Bryce Canyon NP", coords: [37.5930, -112.1871], type: "canyon", desc: "Hoodoos (irregular rock columns) in amphitheaters" },
+      { name: "Canyonlands NP", coords: [38.3269, -109.8783], type: "canyon", desc: "Vast wilderness of canyons and buttes" },
+      { name: "Arches NP", coords: [38.7331, -109.5925], type: "canyon", desc: "Over 2,000 natural sandstone arches" },
+      { name: "Great Sand Dunes NP", coords: [37.7916, -105.5942], type: "default", desc: "Tallest sand dunes in North America" },
+      { name: "Badlands NP", coords: [43.8554, -102.3397], type: "canyon", desc: "Striking geologic formations and fossil beds" },
+      { name: "Indiana Dunes NP", coords: [41.6379, -87.0965], type: "default", desc: "Lake Michigan shoreline with biodiverse dunes" },
+      { name: "Great Smoky Mountains NP", coords: [35.6118, -83.5495], type: "forest", desc: "Ancient mountains with diverse plant and animal life" },
+      { name: "Congaree NP", coords: [33.7930, -80.7817], type: "forest", desc: "Largest intact expanse of old growth bottomland hardwood forest" }
+    ];
+
+    // Add markers with custom icons and enhanced popups
     parks.forEach(park => {
-      L.marker(park.coords)
-        .addTo(map)
-        .bindPopup(park.name)
-        .openPopup();
+      L.marker(park.coords, { 
+        icon: getParkIcon(park.type),
+        riseOnHover: true
+      })
+      .addTo(map)
+      .bindPopup(`
+        <div class="park-popup">
+          <h3>${park.name}</h3>
+          <p>${park.desc}</p>
+          <small>Coordinates: ${park.coords[0].toFixed(4)}, ${park.coords[1].toFixed(4)}</small>
+          <div class="popup-links">
+            <a href="https://www.nps.gov/${park.name.split(' ')[0].toLowerCase()}/index.htm" target="_blank">Official Site</a>
+            <a href="https://www.google.com/search?q=${encodeURIComponent(park.name)}" target="_blank">Search</a>
+          </div>
+        </div>
+      `);
     });
+
+    // Add a legend
+    const legend = L.control({ position: 'bottomright' });
+    legend.onAdd = function() {
+      const div = L.DomUtil.create('div', 'legend');
+      div.innerHTML = `
+        <h4>Park Types</h4>
+        <div><i style="background:#4a6baf"></i> Mountain</div>
+        <div><i style="background:#d35400"></i> Canyon</div>
+        <div><i style="background:#27ae60"></i> Forest</div>
+        <div><i style="background:#8e44ad"></i> Other</div>
+      `;
+      return div;
+    };
+    legend.addTo(map);
   });
 </script>
+
+<style>
+  /* Add some basic styling for the map container */
+  #parks-map {
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  
+  /* Style the popups */
+  .park-popup {
+    min-width: 200px;
+  }
+  
+  .park-popup h3 {
+    margin: 0 0 8px 0;
+    color: #2c3e50;
+    font-size: 16px;
+  }
+  
+  .park-popup p {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: #34495e;
+  }
+  
+  .park-popup small {
+    display: block;
+    margin-bottom: 8px;
+    color: #7f8c8d;
+    font-size: 12px;
+  }
+  
+  .popup-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .popup-links a {
+    font-size: 12px;
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .popup-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the legend */
+  .legend {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  
+  .legend h4 {
+    margin: 0 0 8px 0;
+  }
+  
+  .legend i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+  
+  /* Custom icon styling */
+  .park-icon {
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+    transition: transform 0.2s;
+  }
+  
+  .park-icon:hover {
+    transform: scale(1.2);
+  }
+</style>
 </body>
 </html>
