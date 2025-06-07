@@ -72,6 +72,9 @@ a:hover {
 
 /* Card Styles */
 .card {
+  width: 50%;          /* Limits width to half the container */
+  max-width: 600px;    /* Optional: Prevents cards from getting too wide */
+  margin-right: auto;  /* Pushes card to the left (overrides default centering) */
   background: white;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
