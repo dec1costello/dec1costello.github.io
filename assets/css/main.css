@@ -72,9 +72,6 @@ a:hover {
 
 /* Card Styles */
 .card {
-  width: 50%;          /* Limits width to half the container */
-  max-width: 600px;    /* Optional: Prevents cards from getting too wide */
-  margin-right: auto;  /* Pushes card to the left (overrides default centering) */
   background: white;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
@@ -217,6 +214,23 @@ header p {
   gap: 2rem;
 }
 
+/* Modern browsers solution (Chrome, Edge, Firefox, Safari) */
+.grid:has(> .card:only-child),
+.grid:has(> .card:last-child:nth-child(odd)) {
+  display: block;
+}
+
+.grid:has(> .card:only-child) .card,
+.grid:has(> .card:last-child:nth-child(odd)) .card,
+.grid.odd-items .card,                      /* Fallback class */
+.grid.odd-items .card:only-child {          /* Fallback class */
+  width: 50%;
+  max-width: 600px;
+  margin-right: auto;
+}
+
+
+
 /* Contact Section */
 .contact-icons {
   display: flex;
@@ -293,6 +307,8 @@ footer {
   .section {
     padding: 3rem 0;
   }
+
+  
 }
 
 
