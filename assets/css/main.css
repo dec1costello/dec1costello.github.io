@@ -217,7 +217,9 @@ header p {
 /* Modern browsers solution (Chrome, Edge, Firefox, Safari) */
 .grid:has(> .card:only-child),
 .grid:has(> .card:last-child:nth-child(odd)) {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 /* Responsive odd card layout only for large screens */
