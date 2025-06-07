@@ -294,13 +294,20 @@ footer {
 
 
 .experience-card {
-  max-width: 600px;
   margin: 3rem auto;
   padding: 2rem;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  transition: var(--transition);
+  height: 100%;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 .experience-card h2 {
