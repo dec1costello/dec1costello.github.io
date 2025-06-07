@@ -228,8 +228,8 @@ header p {
   .grid.odd-items .card:only-child {
     width: 50%;
     max-width: 600px;
+    margin-left: 0;
     margin-right: auto;
-    margin-left: auto;
   }
 }
 
