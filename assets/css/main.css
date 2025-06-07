@@ -293,30 +293,7 @@ footer {
 }
 
 
-.experience-card {
-  background: white;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  font-family: 'Segoe UI', sans-serif;
-  overflow: hidden;
-  transition: var(--transition);
-  height: 100%;
-}
-
-.experience-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-}
-
-.experience-card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #333;
-}
-
+/* Job list */
 .job-list {
   list-style: none;
   padding: 0;
