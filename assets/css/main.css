@@ -220,13 +220,17 @@ header p {
   display: block;
 }
 
-.grid:has(> .card:only-child) .card,
-.grid:has(> .card:last-child:nth-child(odd)) .card,
-.grid.odd-items .card,                      /* Fallback class */
-.grid.odd-items .card:only-child {          /* Fallback class */
-  width: 50%;
-  max-width: 600px;
-  margin-right: auto;
+/* Responsive odd card layout only for large screens */
+@media (min-width: 1200px) {
+  .grid:has(> .card:only-child) .card,
+  .grid:has(> .card:last-child:nth-child(odd)) .card,
+  .grid.odd-items .card,
+  .grid.odd-items .card:only-child {
+    width: 50%;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 
