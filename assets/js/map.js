@@ -57,7 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
     { name: "Badlands NP", coords: [43.8554, -102.3397], desc: "Striking geologic formations and fossil beds" },
     { name: "Indiana Dunes NP", coords: [41.6379, -87.0965], desc: "Lake Michigan shoreline with biodiverse dunes" },
     { name: "Great Smoky Mountains NP", coords: [35.6118, -83.5495], desc: "Ancient mountains with diverse plant and animal life" },
-    { name: "Congaree NP", coords: [33.7930, -80.7817], desc: "Largest intact expanse of old growth bottomland hardwood forest" }
+    { name: "Congaree NP", coords: [33.7930, -80.7817], desc: "Largest intact expanse of old growth bottomland hardwood forest" },
+    { name: "Mammoth Cave NP", coords: [37.186976, -86.10144], desc: "Rolling hills, deep river valleys, and the world's longest known cave system. Mammoth Cave National Park is home to thousands of years of human history and a rich diversity of plant and animal life, earning it the title of UNESCO World Heritage Site and International Biosphere Region." }
+
   ];
 
   // Add markers with tree icons and enhanced popups
